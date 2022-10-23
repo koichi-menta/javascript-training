@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.tab {
+  width: 500px;
+}
+.tabLabel,
+.tabContent {
+  width: 100%;
+  display: flex;
+}
+.tabContent {
+  border: 1px solid #c0c0c0;
+  height: 200px;
+  padding: 5px 10px;
+}
+
+.tabLabel > .label {
+  width: 100px;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  height: 30px;
+}
+.tabLabel > .label.active {
+  background-color: #fa9;
+}
+
+.tabContent > .content {
+  display: none;
+  width: 100%;
+}
+.tabContent > .content.active {
+  display: block;
+}
